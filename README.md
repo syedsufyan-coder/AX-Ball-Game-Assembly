@@ -104,5 +104,68 @@ Open a **Developer Command Prompt for VS** (x86 native tools) and navigate to th
 ```bash
 ml /coff /c /I"C:\Irvine" main.asm
 ```
+This produces `main.obj`.
+
+### 3. Link the Object File
+
+```bash
+link /SUBSYSTEM:CONSOLE /LIBPATH:"C:\Irvine" main.obj Irvine32.lib kernel32.lib user32.lib Winmm.lib
+```
+If you are using MASM32 SDK, adjust the library paths accordingly.
+
+### 4. Place Sound Files
+Create a subfolder `sounds/` next to the executable and copy all eight `.wav` files into it.
+
+### 5. Run
+Double‑click `main.exe` or type `main` in the command prompt.
+The game will open in a new console window.
+
+> **Note:** The game adjusts its delay based on the level. If it runs too fast or too slow, you can modify the Delay values in the uuserInput procedure (lines around lvl1, lvl2, lvl3 labels).
+
+---
+
+## 🎯 Gameplay Details
+
+### Level Progression
+- **Level 1** – 10 bricks, each destroyed in 1 hit. Score to advance: **1000**.
+- **Level 2** – 18 bricks, each requires 2 hits. Score to advance: **4600**.
+- **Level 3** – 25 bricks, each requires 3 hits. Winning score: **12100**.
+
+After completing all three levels (reaching the winning score), you are greeted with a victory screen.
+
+### Lives & Game Over
+You start with 3 lives. A life is lost if the ball falls below the paddle.
+When all lives are gone, the game ends and your score is saved.
+
+### Power‑Up (Extra Life)
+- In Level 3, destroying brick #23 (the fourth brick from left in the third row) triggers a falling + token.
+- Catch it with your paddle to gain +1 life (max 4 lives).
+
+### Paddle Shapes
+- Level 1 & 3: `***************` (15 characters)
+- Level 2: `**********` (10 characters)
+This change is handled dynamically – the code switches the paddle string and adjusts collision bounds accordingly.
+
+## 💾 High‑Score File
+After a win or loss, the game appends a line to `scores.txt`:
+```bash
+Name: YourName Level: X SCORE: Y
+```
+You can view the high‑score list from the main menu by selecting HIGHSCORES.
+The file is created automatically if it does not exist.
+
+## 🔊 Sound Credits
+All sound effects are short `wav files`. You can replace them with your own, but keep the same filenames (or modify the source strings).
+The game uses `PlaySound` from `Winmm.lib` with asynchronous playback.
+
+## 📜 License
+Distributed under the `MIT` License. See LICENSE for more information.
+
+## 👤 Development Team
+Your Name / GitHub Handle
+[GitHub Profile Link]
+
+If you liked this project, please ⭐ the repository!
+
 
 <p align="center"> <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="30" height="30" /> <i>Happy brick breaking!</i> <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="30" height="30" /> </p>
