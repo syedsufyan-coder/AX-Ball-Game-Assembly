@@ -1,8 +1,24 @@
-<h1 align="center">
+<!-- <h1 align="center">
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Video%20Game.png" alt="Game" width="40" height="40" />
   Brick Breaker - Assembly x86 (Irvine32)
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Video%20Game.png" alt="Game" width="40" height="40" />
-</h1>
+</h1> -->
+
+<table width="100%" border="0" align = "center">
+  <tr>
+    <td align="left" width="10%">
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Video%20Game.png" alt="Game" width="50" height="50" />
+    </td>
+    <td align="center" width="80%">
+      <h1>Brick Breaker - Assembly x86 (Irvine32)</h1>
+    </td>
+    <td align="right" width="10%">
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Video%20Game.png" alt="Game" width="50" height="50" />
+    </td>
+  </tr>
+</table>
+
+
 
 <p align="center">
   <b>A classic brick‑breaker game written entirely in x86 assembly using the Irvine32 library.</b>
@@ -19,7 +35,7 @@
 
 ---
 
-## 🎮 About The Project
+## 🕹️ About The Project
 
 This is a fully playable brick‑breaker game developed in **x86 assembly** using **MASM** and the **Irvine32** library.  
 It includes a complete menu system, high‑score recording, three distinct levels, dynamic paddle length, multi‑hit bricks, a hidden extra‑life bonus, sound effects, and a pause feature.  
@@ -58,18 +74,21 @@ The project demonstrates low‑level game development techniques – manual coll
 
 ## 📁 Project Structure
 
-├── main.asm # Main source code (the file you uploaded)
-├── sounds/ # All .wav sound files (must be provided by user)
-│ ├── Boing.wav
-│ ├── Saucer.wav
-│ ├── Swordswi.wav
-│ ├── Ao-Laser.wav
-│ ├── Glass.wav
-│ ├── Wowpulse.wav
-│ ├── Byeball.wav
-│ └── Sweepdow.wav
-├── scores.txt # Auto‑generated high‑score file
-└── README.txt # This file
+```text
+.
+├── main.asm            # Main source code
+├── sounds/             # Sound effects (.wav)
+│   ├── Ao-Laser.wav
+│   ├── Boing.wav
+│   ├── Byeball.wav
+│   ├── Glass.wav
+│   ├── Saucer.wav
+│   ├── Sweepdow.wav
+│   ├── Swordswi.wav
+│   └── Wowpulse.wav
+├── scores.txt          # Auto‑generated high‑score file
+└── README.md           # Project documentation
+```
 
 
 > **Note:** The `sounds/` folder must contain the eight `.wav` files listed above. The game will not start without them.  
@@ -146,6 +165,8 @@ When all lives are gone, the game ends and your score is saved.
 - Level 2: `**********` (10 characters)
 This change is handled dynamically – the code switches the paddle string and adjusts collision bounds accordingly.
 
+---
+
 ## 💾 High‑Score File
 After a win or loss, the game appends a line to `scores.txt`:
 ```bash
@@ -154,12 +175,18 @@ Name: YourName Level: X SCORE: Y
 You can view the high‑score list from the main menu by selecting HIGHSCORES.
 The file is created automatically if it does not exist.
 
+---
+
 ## 🔊 Sound Credits
 All sound effects are short `wav files`. You can replace them with your own, but keep the same filenames (or modify the source strings).
 The game uses `PlaySound` from `Winmm.lib` with asynchronous playback.
 
+---
+
 ## 📜 License
 Distributed under the `MIT` License. See LICENSE for more information.
+
+---
 
 ## 👤 Development Team
 Your Name / GitHub Handle
@@ -167,5 +194,22 @@ Your Name / GitHub Handle
 
 If you liked this project, please ⭐ the repository!
 
+<!--
+<p align="center"> <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="30" height="30" /> <i>Happy brick breaking!</i> <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="30" height="30" /> </p> -->
 
-<p align="center"> <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="30" height="30" /> <i>Happy brick breaking!</i> <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="30" height="30" /> </p>
+---
+
+<table width="100%" align = "center">
+  <tr>
+    <td align="left" width="50px" style="border: none;">
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="30" height="30" />
+    </td>
+    <td align="center" style="border: none;">
+      <h3><i>Happy brick breaking!</i></h3>
+    </td>
+    <td align="right" width="50px" style="border: none;">
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="30" height="30" />
+    </td>
+  </tr>
+</table>
+
