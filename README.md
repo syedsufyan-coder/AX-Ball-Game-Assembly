@@ -1,9 +1,3 @@
-<!-- <h1 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Video%20Game.png" alt="Game" width="40" height="40" />
-  Brick Breaker - Assembly x86 (Irvine32)
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Video%20Game.png" alt="Game" width="40" height="40" />
-</h1> -->
-
 <table width="100%" border="0" align = "center">
   <tr>
     <td align="left" width="10%">
@@ -188,16 +182,10 @@ Distributed under the `MIT` License. See LICENSE for more information.
 
 ---
 
-## 👤 Development Team
-Your Name / GitHub Handle
-[GitHub Profile Link]
 
-If you liked this project, please ⭐ the repository!
-
-<!--
-<p align="center"> <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="30" height="30" /> <i>Happy brick breaking!</i> <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="30" height="30" /> </p> -->
-
----
+<h3 align="center">
+  If you liked this project, please ⭐ the repository!
+</h3>
 
 <table width="100%" align = "center">
   <tr>
