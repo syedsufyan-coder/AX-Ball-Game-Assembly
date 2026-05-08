@@ -38,6 +38,14 @@ The project demonstrates low‑level game development techniques – manual coll
 
 ---
 
+## 📛 Why "AX-BALL"?
+
+The game is a tribute to the PC classic DX-Ball, which defined the brick-breaker genre for many.
+
+Since this version was built entirely in assembly language, the AX register (the primary accumulator) was the undisputed MVP of the source code. To honor the register that handled nearly every calculation, the name AX-BALL was decided.
+
+---
+
 ## ✨ Features
 
 - **Three Progressive Levels**  
